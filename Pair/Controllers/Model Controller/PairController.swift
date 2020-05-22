@@ -23,12 +23,16 @@ class PairController {
     }
     
     // MARK: - CRUD
-    func createPair() {
-        
+    func createPair(pairID: Int, firstMember: Member, secondMember: Member?) {
+                
+        saveToPersistence()
     }
     
     func DeletePair(_ pair: Pair) {
-        
+        if let moc = pair.managedObjectContext {
+            moc.delete(pair)
+            saveToPersistence()
+        }
     }
     
     func saveToPersistence() {

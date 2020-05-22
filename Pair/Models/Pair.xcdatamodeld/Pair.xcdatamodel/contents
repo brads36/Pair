@@ -3,10 +3,10 @@
     <entity name="Member" representedClassName="Member" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="Pair" representedClassName="Pair" syncable="YES" codeGenerationType="class">
-        <attribute name="firstMember" optional="YES" attributeType="String"/>
+    <entity name="Pair" representedClassName="Pair" parentEntity="Member" syncable="YES" codeGenerationType="class">
+        <attribute name="memberOne" optional="YES" attributeType="String"/>
+        <attribute name="memberTwo" optional="YES" attributeType="String"/>
         <attribute name="pairID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="secondMember" optional="YES" attributeType="String"/>
     </entity>
     <elements>
         <element name="Member" positionX="-44.765625" positionY="84.265625" width="128" height="58"/>

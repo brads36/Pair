@@ -20,16 +20,34 @@ class PairListTableViewController: UITableViewController {
     @IBAction func addButtonTapped(_ sender: Any) {
         presentMemberAddAlert()
     }
-
+    @IBAction func randomizeButtonTapped(_ sender: Any) {
+        
+        for pair in PairController.shared.pairs {
+            PairController.shared.DeletePair(pair)
+        }
+        
+        var id = 0
+        var index = (MemberController.shared.members.count / 2)
+        var tempMembers = MemberController.shared.members.shuffled()
+        
+//        while index > 0 {
+//            if (tempMembers[index] == tempMembers.last) {
+//                var newPair = Pair(pairID: id, firstMember: tempMembers[index])
+//            }
+//        }
+    }
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return PairController.shared.pairs.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "pairCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "pairCell", for: indexPath) as? PairTableViewCell else { return UITableViewCell() }
 
-        // Configure the cell...
+        let pair = PairController.shared.pairs[indexPath.row]
+        cell.pairIDLabel.text = "Group \(pair.pairID)"
+        //cell.memberOneLabel.text
 
         return cell
     }
