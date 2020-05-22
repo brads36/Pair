@@ -10,10 +10,14 @@ import UIKit
 
 class PairListTableViewController: UITableViewController {
 
+    // MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+    
+    // MARK: - Actions
+    
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

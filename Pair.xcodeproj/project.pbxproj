@@ -17,6 +17,7 @@
 		788DD4BC2478283000429B53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788DD4BB2478283000429B53 /* Main.storyboard */; };
 		788DD4BE247829E500429B53 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4BD247829E500429B53 /* Pair.swift */; };
 		788DD4C024782A0C00429B53 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4BF24782A0C00429B53 /* CoreDataStack.swift */; };
+		788DD4C224782B8800429B53 /* PairController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4C124782B8800429B53 /* PairController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		788DD4BB2478283000429B53 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		788DD4BD247829E500429B53 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		788DD4BF24782A0C00429B53 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		788DD4C124782B8800429B53 /* PairController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		788DD4B42478256100429B53 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				788DD4C124782B8800429B53 /* PairController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				788DD49B2478253200429B53 /* AppDelegate.swift in Sources */,
 				788DD49D2478253200429B53 /* SceneDelegate.swift in Sources */,
 				788DD4BE247829E500429B53 /* Pair.swift in Sources */,
+				788DD4C224782B8800429B53 /* PairController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
