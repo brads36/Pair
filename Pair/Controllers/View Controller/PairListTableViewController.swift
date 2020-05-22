@@ -17,7 +17,9 @@ class PairListTableViewController: UITableViewController {
     }
     
     // MARK: - Actions
-    
+    @IBAction func addButtonTapped(_ sender: Any) {
+        presentMemberAddAlert()
+    }
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,4 +42,10 @@ class PairListTableViewController: UITableViewController {
         }
     }
 
+} // End Of class
+
+extension PairListTableViewController {
+    func presentMemberAddAlert() {
+        
+    }
 }

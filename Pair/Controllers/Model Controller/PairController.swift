@@ -11,5 +11,34 @@ import CoreData
 
 class PairController {
     
+    // MARK: - Sigleton
+    static let shared = PairController()
+    
+    // MARK: - Sources of truth
+    var pairs: [Pair] {
+        let moc = CoreDataStack.context
+        let fetchRequest: NSFetchRequest<Pair> = Pair.fetchRequest()
+        let fetchResults = try? moc.fetch(fetchRequest)
+        return fetchResults ?? []
+    }
+    
+    // MARK: - CRUD
+    func createPair() {
+        
+    }
+    
+    func DeletePair(_ pair: Pair) {
+        
+    }
+    
+    func saveToPersistence() {
+        let moc = CoreDataStack.context
+        do {
+            try moc.save()
+        } catch let error {
+            print("Error in \(#function) : \(error.localizedDescription) \n---\n \(error)")
+        }
+        
+    }
     
 }
