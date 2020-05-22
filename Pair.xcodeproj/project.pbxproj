@@ -16,6 +16,7 @@
 		788DD4BA2478280500429B53 /* PairTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4B92478280500429B53 /* PairTableViewCell.swift */; };
 		788DD4BC2478283000429B53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788DD4BB2478283000429B53 /* Main.storyboard */; };
 		788DD4BE247829E500429B53 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4BD247829E500429B53 /* Pair.swift */; };
+		788DD4C024782A0C00429B53 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4BF24782A0C00429B53 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		788DD4B92478280500429B53 /* PairTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairTableViewCell.swift; sourceTree = "<group>"; };
 		788DD4BB2478283000429B53 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		788DD4BD247829E500429B53 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
+		788DD4BF24782A0C00429B53 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				788DD4A32478253200429B53 /* Pair.xcdatamodeld */,
 				788DD4BD247829E500429B53 /* Pair.swift */,
+				788DD4BF24782A0C00429B53 /* CoreDataStack.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				788DD4C024782A0C00429B53 /* CoreDataStack.swift in Sources */,
 				788DD4BA2478280500429B53 /* PairTableViewCell.swift in Sources */,
 				788DD4A52478253200429B53 /* Pair.xcdatamodeld in Sources */,
 				788DD4B8247827A400429B53 /* PairListTableViewController.swift in Sources */,
