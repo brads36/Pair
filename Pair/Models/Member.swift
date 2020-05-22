@@ -9,10 +9,10 @@
 import Foundation
 import CoreData
 
-extension Members {
+extension Member {
     
-    convenience init(members: [String], context: NSManagedObjectContext = CoreDataStack.context) {
+    convenience init(_ name: String, context: NSManagedObjectContext = CoreDataStack.context) {
         self.init(context: context)
-        self.members = members as NSObject
+        self.name = name
     }
 }

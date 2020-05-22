@@ -9,34 +9,30 @@
 import Foundation
 import CoreData
 
-class MembersController {
+class MemberController {
     
     // MARK: - Singleton
-    static let shared = MembersController()
+    static let shared = MemberController()
     
     // MARK: - Source of Truth
-    var members: [String] {
-        
+    var members: [Member] {
         let moc = CoreDataStack.context
-        let fetchRequest: NSFetchRequest<Members> = Members.fetchRequest()
+        let fetchRequest: NSFetchRequest<Member> = Member.fetchRequest()
         let fetchResults = try? moc.fetch(fetchRequest)
-        var membersNames: [String] = []
-        if let fetchResults = fetchResults {
-            for member in fetchResults {
-                let name = member as! String
-                membersNames.append(name)
-            }
-        } else { return [] }
-        return membersNames
+        return fetchResults ?? []
     }
     
     // MARK: - CRUD
     func addMember(_ name: String) {
-        
+        let member = Member(name)
+        saveToPersistence()
     }
     
-    func deleteMember(_ name: String) {
-        
+    func deleteMember(_ member: Member) {
+        if let moc = member.managedObjectContext {
+            moc.delete(member)
+            saveToPersistence()
+        }
     }
     
     func saveToPersistence() {

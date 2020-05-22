@@ -56,7 +56,7 @@ extension PairListTableViewController {
             guard let text = alertController.textFields?.first?.text, !text.isEmpty
                 else { return }
             
-            MembersController.shared.addMember(text)
+            MemberController.shared.addMember(text)
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .default)

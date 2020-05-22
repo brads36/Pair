@@ -18,7 +18,7 @@
 		788DD4BE247829E500429B53 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4BD247829E500429B53 /* Pair.swift */; };
 		788DD4C024782A0C00429B53 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4BF24782A0C00429B53 /* CoreDataStack.swift */; };
 		788DD4C224782B8800429B53 /* PairController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4C124782B8800429B53 /* PairController.swift */; };
-		788DD4C42478333300429B53 /* Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4C32478333300429B53 /* Members.swift */; };
+		788DD4C42478333300429B53 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4C32478333300429B53 /* Member.swift */; };
 		788DD4C6247838B600429B53 /* MembersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4C5247838B600429B53 /* MembersController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		788DD4BD247829E500429B53 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		788DD4BF24782A0C00429B53 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		788DD4C124782B8800429B53 /* PairController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairController.swift; sourceTree = "<group>"; };
-		788DD4C32478333300429B53 /* Members.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Members.swift; sourceTree = "<group>"; };
+		788DD4C32478333300429B53 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		788DD4C5247838B600429B53 /* MembersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +105,7 @@
 				788DD4A32478253200429B53 /* Pair.xcdatamodeld */,
 				788DD4BD247829E500429B53 /* Pair.swift */,
 				788DD4BF24782A0C00429B53 /* CoreDataStack.swift */,
-				788DD4C32478333300429B53 /* Members.swift */,
+				788DD4C32478333300429B53 /* Member.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				788DD4C42478333300429B53 /* Members.swift in Sources */,
+				788DD4C42478333300429B53 /* Member.swift in Sources */,
 				788DD4C024782A0C00429B53 /* CoreDataStack.swift in Sources */,
 				788DD4BA2478280500429B53 /* PairTableViewCell.swift in Sources */,
 				788DD4A52478253200429B53 /* Pair.xcdatamodeld in Sources */,

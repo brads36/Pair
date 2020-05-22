@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Members" representedClassName="Members" syncable="YES" codeGenerationType="class">
-        <attribute name="member" optional="YES" attributeType="String"/>
-        <attribute name="members" optional="YES" attributeType="Transformable"/>
+    <entity name="Member" representedClassName="Member" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Pair" representedClassName="Pair" syncable="YES" codeGenerationType="class">
         <attribute name="firstMember" optional="YES" attributeType="String"/>
@@ -10,7 +9,7 @@
         <attribute name="secondMember" optional="YES" attributeType="String"/>
     </entity>
     <elements>
+        <element name="Member" positionX="-44.765625" positionY="84.265625" width="128" height="58"/>
         <element name="Pair" positionX="-311.87890625" positionY="101.625" width="128" height="88"/>
-        <element name="Members" positionX="-44.765625" positionY="84.265625" width="128" height="73"/>
     </elements>
 </model>
