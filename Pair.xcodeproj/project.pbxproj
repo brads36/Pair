@@ -15,6 +15,7 @@
 		788DD4B8247827A400429B53 /* PairListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4B7247827A400429B53 /* PairListTableViewController.swift */; };
 		788DD4BA2478280500429B53 /* PairTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4B92478280500429B53 /* PairTableViewCell.swift */; };
 		788DD4BC2478283000429B53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788DD4BB2478283000429B53 /* Main.storyboard */; };
+		788DD4BE247829E500429B53 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD4BD247829E500429B53 /* Pair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		788DD4B7247827A400429B53 /* PairListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PairListTableViewController.swift; path = "Pair/Controllers/View Controller/PairListTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		788DD4B92478280500429B53 /* PairTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairTableViewCell.swift; sourceTree = "<group>"; };
 		788DD4BB2478283000429B53 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		788DD4BD247829E500429B53 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				788DD4A32478253200429B53 /* Pair.xcdatamodeld */,
+				788DD4BD247829E500429B53 /* Pair.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				788DD4B8247827A400429B53 /* PairListTableViewController.swift in Sources */,
 				788DD49B2478253200429B53 /* AppDelegate.swift in Sources */,
 				788DD49D2478253200429B53 /* SceneDelegate.swift in Sources */,
+				788DD4BE247829E500429B53 /* Pair.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
