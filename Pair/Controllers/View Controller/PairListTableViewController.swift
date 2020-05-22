@@ -23,12 +23,11 @@ class PairListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return PairController.shared.pairs.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "pairCell", for: indexPath)
 
         // Configure the cell...
 
@@ -46,6 +45,26 @@ class PairListTableViewController: UITableViewController {
 
 extension PairListTableViewController {
     func presentMemberAddAlert() {
+        let alertController = UIAlertController(title: "Add Name", message: "Enter new name here", preferredStyle: .alert)
         
-    }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Enter here..."
+            textField.autocapitalizationType = .words
+        }
+        
+        let addMemberAction = UIAlertAction(title: "Add", style: .default) { (_) in
+            guard let text = alertController.textFields?.first?.text, !text.isEmpty
+                else { return }
+            
+            MembersController.shared.addMember(text)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default)
+        
+        alertController.addAction(addMemberAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true)
+        }
 }
+
